@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run alias.
 #
 # Example aliases
-alias zshconfig="nano ~/Dotfiles/zsh/.zshrc"
+alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 alias hyprlandconfig="nano ~/.config/hypr/hyprland.lua"
 alias zed="flatpak run dev.zed.Zed > /dev/null 2>&1 &"
