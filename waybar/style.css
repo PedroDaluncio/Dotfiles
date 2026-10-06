@@ -49,22 +49,16 @@ button:hover {
     background-color: #eb4d4b;
 }
 
+#custom-night-light,
 #custom-shutdown-button,
 #custom-gpu-temp,
 #clock,
 #battery,
 #cpu,
 #memory,
-#disk,
-#temperature,
-#backlight,
-#network,
 #pulseaudio,
 #wireplumber,
-#custom-media,
-#tray,
 #mode,
-#idle_inhibitor,
 #scratchpad,
 #mpd {
     padding: 0 5px;
