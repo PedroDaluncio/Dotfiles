@@ -9,7 +9,6 @@
   "modules-left": ["hyprland/workspaces", "hyprland/mode", "sway/scratchpad"],
   "modules-center": ["clock"],
   "modules-right": [
-    "custom/night-light",
     "custom/shutdown-button",
     "pulseaudio",
     "cpu",
@@ -45,10 +44,6 @@
     "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
     "interval": 5,
     "format": "{}°C ",
-  },
-  "custom/night-light": {
-    "on-click": "if [[ $(hyprshade current) ]]; then hyprshade off; else hyprshade on blue-light-filter; fi",
-    "format": "",
   },
   "custom/shutdown-button": {
     "format": "",
