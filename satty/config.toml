@@ -1,0 +1,10 @@
+[general]
+fullscreen = "current-screen"
+auto-copy = false
+copy-command = "wl-copy"
+output-filename = "~/Images/Screenshots/%Y%m%d_%H%M%S.png"
+save-after-copy = false
+
+[keybinds]
+"<Control>s" = "save-to-file"
+"<Control>c" = "save-to-clipboard"

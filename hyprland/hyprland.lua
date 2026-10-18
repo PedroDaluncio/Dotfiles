@@ -328,7 +328,7 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 -- Grim + Satty screenshot
-hl.bind("Print", hl.dsp.exec_cmd('grim - | satty -f - --copy-command wl-copy -o "~/Images/Screenshots/%Y%m%d_%H%M%S.png"'))
+hl.bind("Print", hl.dsp.exec_cmd("sh ~/.config/hypr/scripts/screenshot.sh"))
 
 -- Open zed code editor
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd('flatpak run dev.zed.Zed'))
