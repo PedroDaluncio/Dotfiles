@@ -6,7 +6,7 @@
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces", "hyprland/mode", "sway/scratchpad"],
+  "modules-left": ["hyprland/workspaces", "hyprland/mode"],
   "modules-center": ["clock"],
   "modules-right": [
     "custom/shutdown-button",
@@ -14,17 +14,9 @@
     "cpu",
     "memory",
     "custom/gpu-temp",
-    "sway/language",
   ],
   "hyprland/submap": {
     "format": "<span style=\"italic\">{}</span>",
-  },
-  "sway/scratchpad": {
-    "format": "{icon} {count}",
-    "show-empty": false,
-    "format-icons": ["", ""],
-    "tooltip": true,
-    "tooltip-format": "{app}: {title}",
   },
   "clock": {
     "format": "{:%H:%M %d/%m/%Y}",
@@ -38,16 +30,19 @@
     "tooltip": true,
   },
   "memory": {
-    "format": "{percentage}% {avail}Gb   ",
+    "interval": 10,
+    "format": "{percentage}% {avail:0.2f}Gb   ",
   },
   "custom/gpu-temp": {
-    "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
+    "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits | cut -d. -f1",
     "interval": 5,
     "format": "{}°C ",
+    "tooltip": false,
   },
   "custom/shutdown-button": {
     "format": "",
     "on-click": "shutdown now",
+    "tooltip": false,
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
